@@ -5,8 +5,6 @@ use Database;
 use Package;
 use SinglePage;
 use Core;
-use Whoops\Exception\ErrorException;
-use Log;
 use Events;
 use Concrete\Core\Attribute\Category\CategoryService;
 use Concrete\Core\Attribute\Key\Category as AttributeKeyCategory;
