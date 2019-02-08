@@ -6,7 +6,7 @@ The possibility to offer subscription to a Sendy List on User Registration at th
 The subscription is sent as a POST request after the user goes through the on_user_validate event, after clicking the confirmation E-Mail which simultaneously acts as a Double-Opt-In switch for the list.
 
 ## Installation
-You must install the composer dependencies before installing this addon.
+You must install the composer dependencies before installing this addon. Visit https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies to learn more about this.
 
 ## Community Store
 If you use the Community Store Add-On for your concrete5 project, you can offer billing_first_name and billing_last_name on the registration page and they will be added as "Name" to your Sendy List.
