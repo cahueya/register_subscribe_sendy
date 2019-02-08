@@ -1,0 +1,17 @@
+{
+    "name": "cahueya/register_subscribe_sendy",
+    "description": "Offer subscription to a Sendy List on User Registration",
+    "type": "concrete5-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cahueya",
+            "email": "info@cahueya.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ahmadawais/sendy-php-api": "1.0.0",
+	"guzzlehttp/guzzle": "5.3.0"
+    }
+}
