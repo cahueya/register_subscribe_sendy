@@ -6,6 +6,7 @@ use Concrete\Package\RegisterSubscribeSendy;
 use Concrete\Core\Page\Controller\DashboardPageController;
 use Core;
 use Package;
+use Concrete\Core\Routing\Redirect;
 use Concrete\Core\Page\Single as SinglePage;
 
 defined('C5_EXECUTE') or die("Access Denied.");
@@ -25,6 +26,11 @@ class Subscribe extends DashboardPageController
     }
 
     public function update_configuration() {
+    	if (!$this->token->validate('perform_update_configuration')) {
+            $this->flash('error', $this->token->getErrorMessage());
+
+            return Redirect::to('/dashboard/subscribe');
+        }
     
         if ($this->isPost()) {
            $API_KEY = $this->post('API_KEY');
